@@ -34,10 +34,10 @@ function Footer() {
               Projects
             </Link>
             <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" to="#">Project01</Link></li>
-              <li><Link className="dropdown-item" to="#">Project02</Link></li>
-              <li><Link className="dropdown-item" to="#">Project03</Link></li>
-              <li><Link className="dropdown-item" to="#">Project04</Link></li>
+             
+              <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143vueproject2/" target="-blank">Project02 Vue Framework</Link></li>
+              <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143reactproject3/" target="-blank">Project03 React Framework</Link></li>
+              <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143angularproject4/" target="-blank">Project04 Angular Framework</Link></li>
               <li><hr className="dropdown-divider"></hr></li>
              
             </ul>
