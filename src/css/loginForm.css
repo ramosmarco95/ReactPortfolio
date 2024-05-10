@@ -1,0 +1,24 @@
+.login-form {
+    max-width: 420px;
+    margin: 30px auto;
+    background: #ccc;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .login-duv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  span {
+    float: right;
+    margin-top: 10px;
+  }
+  .resetBtn {
+    background: lightcoral;
+    margin-top: 10px;
+  }
+  .error {
+  color: red;
+  margin-top: 5px;
+}
