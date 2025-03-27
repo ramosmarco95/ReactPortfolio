@@ -1,6 +1,7 @@
 import React from 'react';
 import footerIndex from '../css/footerIndex.css'
 import { Link } from 'react-router-dom';
+import marco_logo from '../assets/marco_logo.png'
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
         {/* Logo Group */}
         <div className="cs-logo-group">
           <Link aria-label="go back to home" className="cs-logo" to="/">
-            Logo
+          <img src={marco_logo} style={{ height: "40px", borderRadius: "25%"  }} alt='logo'/>
           </Link>
           <p className="cs-text">
             Etiam nulla ultrices consequat, posuere nulla. Ac iaculis lorem phasellus ultrices adipiscing viverra sit ut quam. In diam mattis elementum diam at sed ultricies.

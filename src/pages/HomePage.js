@@ -8,9 +8,7 @@ function HomePage() {
         <div className="cs-flex-group">
           <span className="cs-topper">Keep Practicing Code</span>
           <h1 className="cs-title">Explore this Portfolio!</h1>
-          <p className="cs-text">
-            Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-          </p>
+          <p className="cs-text">I believe that practicing code leads to improvement.</p>
         </div>
       </div>
 

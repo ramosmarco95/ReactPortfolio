@@ -1,7 +1,7 @@
 import React from 'react';
 import  '../css/aboutIndex.css'
 import meimage from  '../assets/about/meimage.jpg'
-import family from '../assets/about/family.jpg'
+import family1 from '../assets/about/family1.jpg'
 import outdoor from '../assets/about/outdoor.jpg'
 
 
@@ -33,9 +33,9 @@ As a software developer, I immerse myself in the intricate world of coding, craf
             </li>
             <li className="cs-item">
                 <picture className="cs-picture">
-                <source media="(max-width: 767px)" srcSet={family} />
-                <source media="(min-width: 768px)" srcSet={family} />
-                <img aria-hidden="true" loading="lazy" decoding="async" src={family} alt="chef" width="305" height="335" />
+                <source media="(max-width: 767px)" srcSet={family1} />
+                <source media="(min-width: 768px)" srcSet={family1} />
+                <img aria-hidden="true" loading="lazy" decoding="async" src={family1} alt="chef" width="305" height="335" />
                 </picture>
                 <div className="cs-info">
                 <span className="cs-name">My Family</span>

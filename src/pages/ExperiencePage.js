@@ -19,32 +19,60 @@ function ContactPage() {
           <span className="cs-topper">Why Choose Me?</span>
           <h2 className="cs-title">Take a moment to hear about me!...</h2>
           <p className="cs-text">
-          I am a customer service professional with seven years in the service industry over five of those years in a busy airport setting.
-             In my previous position as an Airline Ground/Customer service professional with Horizon Air, I took on a number of duties daily including answering customer questions and helping people with their inquiries.
-              I am familiar with common computer software used in the airline industry and I am adept at learning new skills quickly.<br/>
-               I discover my passion for coding while working for Horizon Air. 
-               The technology use in the Airline industry made me question the “how” airline programs are built. 
-               This desire to learn coding made me pursue a career as a Software Developer.
-            I am enrolled in the Software Development Program at College of Western Idaho. I am planning to obtain an Associate Degree in Software Development at the end of Spring 2025. With a background in airline customer service and a growing passion for software development, particularly in CSharp and web technologies such as HTML, CSS, JavaScript, React, and Vue, I am eager to contribute to your team and further develop my skills in a professional environment.
+          I discovered my passion for coding while working in the airline industry. Seeing the technology behind airline operations sparked my curiosity about how these systems are built, leading me to pursue a career in software development.
+
+Currently, I am enrolled in the Software Development Program at the College of Western Idaho and plan to earn my Associate Degree in Software Development by Spring 2025. My primary focus is on becoming a backend developer, specializing in building robust and scalable server-side applications. I am particularly interested in working with C#, ASP.NET Core, and SQL to develop efficient and secure backend systems. I enjoy solving complex problems, optimizing database performance, and ensuring seamless communication between front-end applications and backend services. While I am continuously learning and refining my skills, I am eager to contribute to a development team where I can grow as a backend developer and help build impactful software solutions.
 
             <br/>While my experience in software development is at a growing level, I have been actively learning and building projects in CSharp and various web technologies. I have a solid foundation in HTML, CSS, and JavaScript, and I am proficient in using frameworks such as React and Vue to create interactive and responsive web applications. I am eager to continue learning and expanding my skills in these areas, and I am excited about the opportunity to contribute to projects.
           </p>
           <ul className="cs-ul">
             <li className="cs-li">
               <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
-              Clean Work
+              CLEAN WORK
             </li>
             <li className="cs-li">
               <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
-              Attention To Detail
+              ATTENTION TO DETAIL
             </li>
             <li className="cs-li">
               <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
-              Punctual
+              PUNTUAL
             </li>
             <li className="cs-li">
               <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
-              Quality Guaranteed
+              .NET MAUI 
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              ASP.NET Core MVC
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              SQL SERVER
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              C#
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              PYTHON
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              JAVASCRIPT
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              REACT
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              VUE
+            </li>
+            <li className="cs-li">
+              <img className="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27" />
+              TOOL MANAGEMENT
             </li>
           </ul>
           <Link to="/contact_form" className="cs-button-solid">Contact Me</Link>

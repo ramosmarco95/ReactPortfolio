@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import marco_logo from "../assets/marco_logo.png";
 
 
 const Navbar = () => {
@@ -7,14 +8,14 @@ const Navbar = () => {
     <>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <Link class="navbar-brand" to="/">Logo</Link>
+      <Link class="navbar-brand" to="/"><img src={marco_logo} style={{ height: "40px", borderRadius: "25%"  }} alt="logo"/></Link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <Link class="nav-link" to="">Home</Link>
+            <Link class="nav-link" to="/">Home</Link>
           </li>
           <li class="nav-item">
             <Link class="nav-link" to="about">About</Link>
