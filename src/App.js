@@ -4,7 +4,7 @@ import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import LoginForm from './components/LoginForm.js';
 import ContactForm from './components/ContactForm.js';
-import { BrowserRouter as Router, Routes,  Route} from 'react-router-dom';
+import { HashRouter as Router, Routes,  Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage.js';
 import ExperiencePage from './pages/ExperiencePage.js';
