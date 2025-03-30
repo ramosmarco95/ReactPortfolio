@@ -1,9 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import { Outlet, Link } from "react-router-dom";
 import marco_logo from "../assets/marco_logo.png";
 
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Define all navigation items
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Experience", path: "/experience" },
+    { name: "Project02 Vue Framework", path: "https://ramosmarco95.github.io/swdv143vueproject2/", external: true },
+    { name: "Project03 React Framework", path: "https://ramosmarco95.github.io/swdv143reactproject3/", external: true },
+    { name: "Project04 Angular Framework", path: "https://ramosmarco95.github.io/swdv143angularproject4/", external: true },
+    { name: "Sign In", path: "/login" },
+    { name: "Contact Form", path: "/contact" },
+    { name: "404", path: "/404" }
+  ];
+  // Filter items based on search input
+  const filteredNavItems = navItems.filter(item =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -51,7 +70,7 @@ const Navbar = () => {
             </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search"/>
+          <input class="form-control me-2" type="text" placeholder="Search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
           <button class="btn btn-primary" type="button">Search</button>
         </form>
       </div>
