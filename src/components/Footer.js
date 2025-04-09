@@ -13,7 +13,7 @@ function Footer() {
           <img src={marco_logo} style={{ height: "40px", borderRadius: "25%"  }} alt='logo'/>
           </Link>
           <p className="cs-text">
-            Etiam nulla ultrices consequat, posuere nulla. Ac iaculis lorem phasellus ultrices adipiscing viverra sit ut quam. In diam mattis elementum diam at sed ultricies.
+          A passionate software developer who enjoys building clean, reliable, and user-friendly applications. Whether it’s a web app, mobile project, or backend system, I approach every project with curiosity, care, and a commitment to learning. This portfolio is a small collection of what I’ve created so far, and I'm always excited about what’s next.
           </p>
         </div>
         {/* Links */}

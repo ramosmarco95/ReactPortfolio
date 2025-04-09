@@ -1,8 +1,11 @@
 import React from 'react';
 import homeIndex from '../css/homeIndex.css'
+import Hero from '../components/Hero.js'
 
 function HomePage() {
   return (
+    <>
+    <Hero/>
     <section id="hero-229">
       <div className="cs-container">
         <div className="cs-flex-group">
@@ -19,6 +22,8 @@ function HomePage() {
         <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true" />
       </picture>
     </section>
+    </>
+    
   );
 }
 
