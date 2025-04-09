@@ -1,10 +1,13 @@
 import React, {useState} from "react";
 import { Outlet, Link } from "react-router-dom";
 import marco_logo from "../assets/marco_logo.png";
+import { useNavigate } from "react-router-dom"; 
 
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate(); 
+
 
   // Define all navigation items
   const navItems = [
@@ -71,7 +74,20 @@ const Navbar = () => {
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="text" placeholder="Search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
-          <button class="btn btn-primary" type="button">Search</button>
+          <button
+            className="btn btn-primary"
+            type="button"
+            onClick={() => {
+              const firstMatch = filteredNavItems.find(item => !item.external);
+              if (firstMatch) {
+                navigate(firstMatch.path);
+              } else {
+                alert("No matching page found.");
+              }
+            }}>
+            Search
+          </button>
+
         </form>
       </div>
     </div>

@@ -3,6 +3,7 @@ import '../css/contactFormIndex.css'
 
 
 function ContactForm() {
+ 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,24 +23,25 @@ function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      // Handle form submission logic here
-      console.log('Form submitted:', formData);
-      alert('Thank you!')
-      // Reset form after submission
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        findUs: '',
-        message: ''
-      });
-    } else {
-      console.log('Form has errors');
-    }
-  };
+  
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (validateForm()) {
+    fetch("https://formspree.io/f/xvgkdprb", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+    .then(() => {
+      alert("Thank you!");
+      setFormData({ name: "", email: "", phone: "", findUs: "", message: "" });
+    })
+    .catch((err) => console.error("Form error:", err));
+  }
+}
 
   const validateForm = () => {
     let isValid = true;
@@ -89,11 +91,11 @@ function ContactForm() {
           <span className="cs-topper">I am Excited to hear from you</span>
           <h2 className="cs-title">Contact Me</h2>
           <p className="cs-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque enim risus lorem diam. Viverra egestas penatibus feugiat vitae in dignissim.
+          📩 Note: This contact form is powered by Formspree, a secure third-party service that delivers your message directly to my inbox. Feel free to reach out — I’ll respond as soon as possible!
           </p>
         </div>
         {/* Form */}
-        <form id="cs-form-242" name="Contact Form" onSubmit={handleSubmit}>
+        <form id="cs-form-242" name="Contact Form"  onSubmit={handleSubmit}>
           <label className="cs-label">
             Name
             <input
@@ -137,7 +139,7 @@ function ContactForm() {
             {formErrors.phone && <span className="error-message">{formErrors.phone}</span>}
           </label>
           <label className="cs-label">
-            How Did You Find Us
+            How Did You Find Me?
             <input
               className="cs-input"
               type="text"
@@ -170,8 +172,8 @@ function ContactForm() {
                 <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" className="cs-icon" width="36" height="36" decoding="async" />
               </picture>
               <div className="cs-flex-group">
-                <span className="cs-header">Email</span>
-                <a href="mailto:support@yourdomain.com" className="cs-link">support@yourdomain.com</a>
+                <span className="cs-header">Email:</span>
+                <a href="mailto:thanos@example.com" className="cs-link">thanos@example.com</a>
               </div>
             </li>
             <li className="cs-li">
@@ -179,8 +181,8 @@ function ContactForm() {
                 <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" className="cs-icon" width="36" height="36" decoding="async" />
               </picture>
               <div className="cs-flex-group">
-                <span className="cs-header">Phone</span>
-                <a href="tel:206-987-6543" className="cs-link">(206) 987-6543</a>
+                <span className="cs-header">Phone:</span>
+                <a href="tel:123-456-7890" className="cs-link">(123) 456-7890</a>
               </div>
             </li>
             <li className="cs-li">
@@ -188,8 +190,8 @@ function ContactForm() {
                 <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" className="cs-icon" width="36" height="36" decoding="async" />
               </picture>
               <div className="cs-flex-group">
-                <span className="cs-header">Address</span>
-                <a href="" className="cs-link"><span className="cs-block">2553 Woodbridge Lane,</span> Boston Ware 120</a>
+                <span className="cs-header">Address:</span>
+                <a href="/" className="cs-link">Lockwood St, Boise ID</a>
               </div>
             </li>
           </ul>
