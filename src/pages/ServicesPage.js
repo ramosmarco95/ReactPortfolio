@@ -1,4 +1,4 @@
-import servicesIndex from '../css/servicesIndex.css'
+import '../css/servicesIndex.css'
 
 
 import React, { useState, useEffect } from 'react';

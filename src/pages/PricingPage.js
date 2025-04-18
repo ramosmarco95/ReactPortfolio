@@ -1,4 +1,4 @@
-import pricingIndex from '../css/pricingIndex.css'
+import '../css/pricingIndex.css'
 
 import React from 'react';
 

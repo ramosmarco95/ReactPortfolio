@@ -1,5 +1,5 @@
 
-import reviews_subscribe from '../css/reviews_subscribe.css'
+import '../css/reviews_subscribe.css'
 import React, { useState } from 'react';
 
 function Subscribe() {

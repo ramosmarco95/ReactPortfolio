@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/orderIndex.css'; // Importing CSS file for styling
+import '../css/orderIndex.css'; 
 
 
 const OrderForm = () => {
