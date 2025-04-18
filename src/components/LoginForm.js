@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../css/loginForm.css'
 import React, { useState } from 'react';
 
@@ -96,7 +97,7 @@ function LoginForm() {
 
       <div className="clearfix ">
         <button className="resetBtn" type="button" onClick={handleCancel}>Cancel</button>
-        <span>Forgot <a style={{ marginLeft: '5px' }} href="#">password</a></span>
+        <span>Forgot <Link style={{ marginLeft: '5px' }} to="/reset-password:token">password</Link></span>
       </div>
     </form>
   );
