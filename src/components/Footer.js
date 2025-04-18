@@ -63,10 +63,10 @@ function Footer() {
             <span className="cs-header">Contact</span>
           </li>
           <li className="cs-contact-li">
-            <a className="cs-contact-link" href="tel:123-456-7890">(123) 456-7890</a>
+            <a className="cs-contact-link" href="tel:208-412-0338">(208) 412-0338</a>
           </li>
           <li className="cs-contact-li">
-            <a className="cs-contact-link" href="mailto:example@gmail.com">example@gmail..com</a>
+            <a className="cs-contact-link" href="mailto:tva.variant09@gmail.com">tva.variant09@gmail.com</a>
           </li>
           {/* Social Media */}
           <li className="cs-contact-li cs-social-group">
