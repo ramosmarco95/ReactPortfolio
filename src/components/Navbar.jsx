@@ -52,7 +52,7 @@ const Navbar = () => {
             </Link>
             <ul className="dropdown-menu">
              
-              <li><Link className="dropdown-item" to="/">Project01 HTML and CSS</Link></li>
+              <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/html-css-projects/" target="-blank">Project01 HTML and CSS</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143vueproject2/" target="-blank">Project02 Vue Framework</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143reactproject3/" target="-blank">Project03 React Framework</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143angularproject4/" target="-blank">Project04 Angular Framework</Link></li>
