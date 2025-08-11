@@ -1,33 +1,54 @@
-name: Deploy CRA to gh-pages
+name: Deploy Vite React App to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 permissions:
-  contents: write  # must be write to push to gh-pages
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout source code
+      uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
 
-      - name: Install deps
-        run: npm ci
+    - name: Install dependencies
+      working-directory: frontend
+      run: npm install
 
-      - name: Build
-        run: npm run build
+    - name: Build Vite app
+      working-directory: frontend
+      run: npm run build
 
-      - name: Publish to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./build
-          # first time only:
-          # force_orphan: true
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
