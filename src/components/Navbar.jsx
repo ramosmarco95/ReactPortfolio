@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Experience", path: "/experience" },
-    { name: "Project01 HTML and CSS", path: "https://ramosmarco95.github.io/html-css-projects/" },
+    { name: "Project01 HTML and CSS", path: "https://ramosmarco95.github.io/html-css-projects/" , external: true },
     { name: "Project02 Vue Framework", path: "https://ramosmarco95.github.io/swdv143vueproject2/", external: true },
     { name: "Project03 React Framework", path: "https://ramosmarco95.github.io/swdv143reactproject3/", external: true },
     { name: "Project04 Angular Framework", path: "https://ramosmarco95.github.io/swdv143angularproject4/", external: true },
