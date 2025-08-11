@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/footerIndex.css'
 import { Link } from 'react-router-dom';
-import marco_logo from '../assets/marco_logo.png'
+import marco_logo from '../assets/marco-logo-no-bg.png'
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
         {/* Logo Group */}
         <div className="cs-logo-group">
           <Link aria-label="go back to home" className="cs-logo" to="/">
-          <img src={marco_logo} style={{ height: "40px", borderRadius: "25%"  }} alt='logo'/>
+          <img src={marco_logo} style={{ height: "40px", borderRadius: "25%", backgroundColor: "beige"  }} alt='logo'/>
           </Link>
           <p className="cs-text">
           A passionate software developer who enjoys building clean, reliable, and user-friendly applications. Whether it’s a web app, mobile project, or backend system, I approach every project with curiosity, care, and a commitment to learning. This portfolio is a small collection of what I’ve created so far, and I'm always excited about what’s next.

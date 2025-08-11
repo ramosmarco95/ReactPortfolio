@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Outlet, Link } from "react-router-dom";
-import marco_logo from "../assets/marco_logo.png";
+import marco_logo from "../assets/marco-logo-no-bg.png";
 import { useNavigate } from "react-router-dom"; 
 
 
@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Experience", path: "/experience" },
+    { name: "Project01 HTML and CSS", path: "https://ramosmarco95.github.io/html-css-projects/" },
     { name: "Project02 Vue Framework", path: "https://ramosmarco95.github.io/swdv143vueproject2/", external: true },
     { name: "Project03 React Framework", path: "https://ramosmarco95.github.io/swdv143reactproject3/", external: true },
     { name: "Project04 Angular Framework", path: "https://ramosmarco95.github.io/swdv143angularproject4/", external: true },
@@ -30,7 +31,7 @@ const Navbar = () => {
     <>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <Link class="navbar-brand" to="/"><img src={marco_logo} style={{ height: "40px", borderRadius: "25%"  }} alt="logo"/></Link>
+      <Link class="navbar-brand" to="/"><img src={marco_logo} style={{ height: "40px", borderRadius: "25%", backgroundColor: "beige" }} alt="logo"/></Link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,7 +52,7 @@ const Navbar = () => {
             </Link>
             <ul className="dropdown-menu">
              
-
+              <li><Link className="dropdown-item" to="/">Project01 HTML and CSS</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143vueproject2/" target="-blank">Project02 Vue Framework</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143reactproject3/" target="-blank">Project03 React Framework</Link></li>
               <li><Link className="dropdown-item" to="https://ramosmarco95.github.io/swdv143angularproject4/" target="-blank">Project04 Angular Framework</Link></li>

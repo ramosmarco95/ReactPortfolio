@@ -2,17 +2,17 @@ import React from 'react';
 import { HashRouter as Router, Routes,  Route} from 'react-router-dom';
 
 // components
-import Navbar from './components/Navbar.js';
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
-import LoginForm from './components/LoginForm.js';
-import ContactForm from './components/ContactForm.js';
+import Navbar from './components/Navbar.jsx';
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import LoginForm from './components/LoginForm.jsx';
+import ContactForm from './components/ContactForm.jsx';
 
 // pages
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage.js';
-import ExperiencePage from './pages/ExperiencePage.js';
-import Four0FourPage from './pages/Four0FourPage.js'
+import HomePage from './pages/HomePage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import ExperiencePage from './pages/ExperiencePage.jsx';
+import Four0FourPage from './pages/Four0FourPage.jsx'
 import ResetPasswordPage from './pages/ResetPasswordPage.jsx';
 
 function App() {

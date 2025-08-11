@@ -1,6 +1,6 @@
 import React from 'react';
 import  '../css/homeIndex.css'
-import Hero from '../components/Hero.js'
+import Hero from '../components/Hero.jsx'
 
 function HomePage() {
   return (
